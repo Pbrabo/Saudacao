@@ -43,18 +43,102 @@ namespace Git
         if (opcao == 1)
         {
             Console.WriteLine("Bem-vindo " + name);
+            Console.WriteLine("Digite quanto tempo de casa você completa esse ano.");
         }
 
         if (opcao == 2)
         {
             Console.WriteLine("Welcome " + name);
+            Console.WriteLine("Enter how much homework you complete this year.");
         }
         
         if (opcao == 3)
         {
             Console.WriteLine("Bienvenue " + name);
+            Console.WriteLine("Entrez le nombre de devoirs que vous avez terminés cette année.");
+        }
+        
+        TempoDeCasa Anos = new TempoDeCasa();
+        int anos = Convert.ToInt32(Console.ReadLine());
+       
+        if (opcao == 1) 
+        {
+         switch (anos)
+         {
+            case 1:
+            Console.WriteLine("Parabéns " + name + " esse ano você receberá um vale brinde de R$ 300");
+            break;
+
+            case 2:
+            Console.WriteLine("Parabéns " + name + " esse ano você receberá um Vale refeição de R$ 450");
+            break;
+
+            case 5:
+            Console.WriteLine("Parabéns " + name + " esse ano você receberá um Relogio");
+            break;
+
+            case 10:
+            Console.WriteLine("Parabéns " + name + " esse ano você receberá um Notebook");
+            break;
+
+            default:
+            Console.WriteLine(name + " Esse ano você não recebera prêmios");
+            break;
+         }
+        }
+        
+        if (opcao == 2)
+        {
+         switch (anos)
+         {
+            case 1:
+            Console.WriteLine("Congratulations " + name + " this year you will receive a Gift voucher of $ 300");
+            break;
+
+            case 2:
+            Console.WriteLine("Congratulations " + name + " this year you will receive a meal voucher $ 450");
+            break;
+
+            case 5:
+            Console.WriteLine("Congratulations " + name + " this year you will receive a Watch");
+            break;
+
+            case 10:
+            Console.WriteLine("Congratulations " + name + " this year you will receive a Notebook");
+            break;
+
+            default:
+            Console.WriteLine(name + " This year you will not receive awards");
+            break;
+         }
+        }
+        if (opcao == 3)
+        {
+         switch (anos)
+         {
+            case 1:
+            Console.WriteLine("Félicitations " + name + " cette année, vous recevrez un Chèque cadeau de $ 300");
+            break;
+
+            case 2:
+            Console.WriteLine("Félicitations " + name + " cette année, vous recevrez un chèque-repas $ 450");
+            break;
+
+            case 5:
+            Console.WriteLine("Félicitations " + name + " cette année, vous recevrez un Regardez");
+            break;
+
+            case 10:
+            Console.WriteLine("Félicitations " + name + " cette année, vous recevrez un cahier");
+            break;
+
+            default:
+            Console.WriteLine(name + " Cette année, vous ne recevrez pas de prix");
+            break;
+         }
         }
         
         }
     }
 }
+
